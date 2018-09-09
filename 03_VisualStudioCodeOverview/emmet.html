@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- DUMMY TEXT: lorem -->
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti nobis quaerat eius ipsa unde totam. Fugiat qui,
+    suscipit, consectetur inventore expedita minus molestiae numquam laborum hic aut velit voluptas ipsa!
+
+    <!-- NESTING OPERATORS -->
+
+    <!-- Child >: div>ul>li -->
+    <div>
+        <ul>
+            <li></li>
+        </ul>
+    </div>
+
+    <!-- Sibling +: div+p+section -->
+    <div></div>
+    <p></p>
+    <section></section>
+
+
+    <!-- Multiplication *: ul>li*8 -->
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+    <!-- Grouping (): section>(div>header>p)+div>ul>li*5>a -->
+    <section>
+        <div>
+            <header>
+                <p></p>
+            </header>
+        </div>
+        <div>
+            <ul>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+            </ul>
+        </div>
+    </section>
+
+
+    <!-- ATTRIBUTE OPERATORS -->
+
+    <!-- id #: div#someID -->
+    <div id="someID"></div>
+
+    <!-- class .: div.someClass -->
+    <div class="someClass"></div>
+
+    <!-- Custom attributes []: form[title="Form XYZ" department="Customer Service"] -->
+    <form action="" title="Form XYZ" department="Customer Service"></form>
+
+    <!-- Item numbering $: ul>li.line$*3 -->
+    <ul>
+        <li class="line1"></li>
+        <li class="line2"></li>
+        <li class="line3"></li>
+    </ul>
+
+    <!-- Add text {}: a*3{Change text later} -->
+    <a href="">Change text later</a>
+    <a href="">Change text later</a>
+    <a href="">Change text later</a>
+
+
+    <!-- COMBINING ABBREVIATIONS SYNTAX: #someID>div.someClass+ul#someUlId>li*5>a{Link number $} -->
+    <div id="someID">
+        <div class="someClass"></div>
+        <ul id="someUlId">
+            <li><a href="">Link number 1</a></li>
+            <li><a href="">Link number 2</a></li>
+            <li><a href="">Link number 3</a></li>
+            <li><a href="">Link number 4</a></li>
+            <li><a href="">Link number 5</a></li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
